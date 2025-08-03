@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head><title>Zerodha Trader</title></head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<body>
+  <h1>Welcome to Zerodha Auto Trader</h1>
+  <a href="/login"><button>Login to Zerodha</button></a>
+
+
+  <form>
+    <input type="text" name="api_key" placeholder="API Key">
+    <input type="text" name="api_secret" placeholder="API Secret">
+    <button type="submit">Submit</button>
+  </form>
+
+<!--{#  <h2>Place Normal Order</h2>#}-->
+<!--{#  <form action="/place-order" method="POST">#}-->
+<!--{#    Symbol: <input name="symbol"><br>#}-->
+<!--{#    Quantity: <input name="quantity" type="number"><br>#}-->
+<!--{#    Exchange: <input name="exchange" value="NSE"><br>#}-->
+<!--{#    Transaction Type: <select name="transaction_type">#}-->
+<!--{#      <option value="BUY">BUY</option>#}-->
+<!--{#      <option value="SELL">SELL</option>#}-->
+<!--{#    </select><br>#}-->
+<!--{#    Product: <input name="product" value="CNC"><br>#}-->
+<!--{#    Order Type: <input name="order_type" value="MARKET"><br>#}-->
+<!--{#    Variety: <input name="variety" value="regular"><br>#}-->
+<!--{#    <button type="submit">Place Order</button>#}-->
+<!--{#  </form>#}-->
+
+<!--{#  <h2>Place GTT Order</h2>#}-->
+<!--{#  <form action="/place-gtt" method="POST">#}-->
+<!--{#    Symbol: <input name="symbol"><br>#}-->
+<!--{#    Quantity: <input name="quantity" type="number"><br>#}-->
+<!--{#    Exchange: <input name="exchange" value="NSE"><br>#}-->
+<!--{#    Transaction Type: <select name="transaction_type">#}-->
+<!--{#      <option value="BUY">BUY</option>#}-->
+<!--{#      <option value="SELL">SELL</option>#}-->
+<!--{#    </select><br>#}-->
+<!--{#    Product: <input name="product" value="CNC"><br>#}-->
+<!--{#    Order Type: <input name="order_type" value="LIMIT"><br>#}-->
+<!--{#    Trigger Price: <input name="trigger_price"><br>#}-->
+<!--{#    Last Price: <input name="last_price"><br>#}-->
+<!--{#    Order Price: <input name="order_price"><br>#}-->
+<!--{#    Trigger Type: <input name="trigger_type" value="single"><br>#}-->
+<!--{#    <button type="submit">Place GTT Order</button>#}-->
+<!--{#  </form>#}-->
+
+  <h2>Trigger Sheet-Based Orders</h2>
+  <a href="/trigger-sheet-orders"><button>Trigger normal Orders from Sheet</button></a>
+
+  <a href="/trigger-gtt-orders"><button>Trigger GTT orders  from Sheet</button></a>
+</body>
+</html>
