@@ -3,8 +3,8 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 # Zerodha credentials
-api_key = ""
-api_secret = ""
+api_key = "lza9556095dg7wn2"
+api_secret = "8rhgrlk666b35vyuragzwqbiy6us4sme"
 kite = KiteConnect(api_key=api_key)
 
 
